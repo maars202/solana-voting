@@ -1,0 +1,9 @@
+
+/solana-voting-programs/.anchor
+/solana-voting-programs/.DS_Store
+/solana-voting-programs/target
+/solana-voting-programs/**/*.rs.bk
+/solana-voting-programs/node_modules
+/solana-voting-programs/notes.md
+
+/sol-stream-voting/target
