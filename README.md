@@ -40,8 +40,8 @@ cd solana-voting-programs
 anchor build
 anchor deploy
 ```
-
 Take note of programId displayed:
+![alt text](https://github.com/maars202/solana-voting/blob/main/solana-voting-programs/imgs/programIDDeployment.png)
 
 Place programId in solana-voting-programs/programs/solana-voting/src/lib.rs in line 7 in ... declare_id!("85GB2GBrh15nj5vwfPLZBDW4NHqUuWuXeeago9oUEtnJ") 
 place programId in solana-voting-programs/Anchor.toml in solana_voting = "85GB2GBrh15nj5vwfPLZBDW4NHqUuWuXeeago9oUEtnJ"
@@ -51,5 +51,5 @@ anchor run test2
 ```
 After the test have been run, it will generate logs related to the program you have deployed on the solana local testnet.
 
-You should be able to see these program logs in the API terminal and the postgresql table 'logstreams'.
+You should be able to see these program logs in the API terminal and the postgresql table 'logstreams'. It will  be similar to sampleProgramLogsPostgresql.csv!
 
