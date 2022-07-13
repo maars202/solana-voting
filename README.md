@@ -70,3 +70,20 @@ After the test have been run, it will generate logs related to the program you h
 
 You should be able to see these program logs in the API terminal and the postgresql table 'logstreams'. It will  be similar to sampleProgramLogsPostgresql.csv!
 
+
+A sample log row that is created after CreateVotetopic program function is triggered and it includes details of:
+- what the topic is
+- options that are provided
+
+3,"Program 85GB2GBrh15nj5vwfPLZBDW4NHqUuWuXeeago9oUEtnJ invoke [1]|||Program log: Instruction: CreateVotetopic|||Program 11111111111111111111111111111111 invoke [2]|||Program 11111111111111111111111111111111 success|||Program log: create_votetopic to this topic now: ""Next Class president for 2023"" with options: ""Jane, Mary, Elise, Joe, Simpson, Json""|||Program log: options are: [
+    ""Jane"",
+    "" Mary"",
+    "" Elise"",
+    "" Joe"",
+    "" Simpson"",
+    "" Json"",
+], with length: 6|||Program log: votetopic with 0 voters: [
+    ""3xfx7HR2X4RV99zeZZcCkiv5BLsrG1ydbypmx8RRHVmK"",
+]|||Program 85GB2GBrh15nj5vwfPLZBDW4NHqUuWuXeeago9oUEtnJ consumed 74588 of 200000 compute units|||Program 85GB2GBrh15nj5vwfPLZBDW4NHqUuWuXeeago9oUEtnJ success",1657618538,False
+
+
