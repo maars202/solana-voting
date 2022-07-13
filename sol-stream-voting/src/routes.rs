@@ -16,22 +16,3 @@ pub fn index() -> &'static str
     // subscribe_to_programlogs();
     "Accessing program logs now...."
 }
-
-// #[get("/<pubkey>")]
-// pub fn get_all_stream(pubkey: &str) -> Json<Value> {
-//     let pubkey_string = String::from_str(pubkey).unwrap();
-//     let conn = establish_connection();
-//     Json(
-//         json!({"status": "success", "something": "yesss"}),
-//     )
-// }
-
-
-// #[get("/sth")]
-// pub fn get_all_stream2()  -> &'static str {
-//     println!("got into get_all_stream2 method");
-//     // let pubkey_string = String::from_str(pubkey).unwrap();
-//     // let conn = establish_connection();
-//     subscribe_to_programlogs();
-//     "hellooo get_all_stream2"
-// }
