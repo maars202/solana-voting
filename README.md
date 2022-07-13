@@ -38,9 +38,20 @@ anchor deploy
 Take note of programId displayed:
 ![alt text](https://github.com/maars202/solana-voting/blob/main/solana-voting-programs/imgs/programIDDeployment.png)
 
-Place programId in solana-voting-programs/programs/solana-voting/src/lib.rs in line 7:  ... declare_id!("85GB2GBrh15nj5vwfPLZBDW4NHqUuWuXeeago9oUEtnJ") 
-Place programId in solana-voting-programs/Anchor.toml in line 2: solana_voting = "85GB2GBrh15nj5vwfPLZBDW4NHqUuWuXeeago9oUEtnJ"
-Place programId in sol-stream-voting/src/solana.rs in line 16 and 81: let programID = "85GB2GBrh15nj5vwfPLZBDW4NHqUuWuXeeago9oUEtnJ";
+Place programId in solana-voting-programs/programs/solana-voting/src/lib.rs in line 7:
+```
+declare_id!("85GB2GBrh15nj5vwfPLZBDW4NHqUuWuXeeago9oUEtnJ") 
+```
+
+Place programId in solana-voting-programs/Anchor.toml in line 2: 
+```
+solana_voting = "85GB2GBrh15nj5vwfPLZBDW4NHqUuWuXeeago9oUEtnJ"
+```
+
+Place programId in sol-stream-voting/src/solana.rs in line 16 and 81: 
+```
+let programID = "85GB2GBrh15nj5vwfPLZBDW4NHqUuWuXeeago9oUEtnJ";
+```
 
 Terminal #4: Running diesel API for listening to events
 Set sol-stream-voting/.env to postgresql database url.
