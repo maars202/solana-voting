@@ -12,9 +12,9 @@
 
 
 
-STEPS for using sol-stream-voting API to get logs from solana program:
+## Steps for using sol-stream-voting API to get logs from solana program:
 
-open 4 terminals
+Open 4 terminals
 
 Terminal #1:
 ```
@@ -28,7 +28,7 @@ solana logs
 ```
 
 Terminal #3:
-set sol-stream-voting/.env to postgresql database url
+Set sol-stream-voting/.env to postgresql database url.
 ```
 cd sol-stream-voting 
 cargo run
