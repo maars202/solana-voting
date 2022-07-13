@@ -77,7 +77,8 @@ pub fn subscribe_to_program() {
 
 pub fn subscribe_to_program2() {
     let url = "ws://localhost:8900".to_string();
-    let program_pub_key = Pubkey::from_str("85GB2GBrh15nj5vwfPLZBDW4NHqUuWuXeeago9oUEtnJ")
+    let programID = "85GB2GBrh15nj5vwfPLZBDW4NHqUuWuXeeago9oUEtnJ";
+    let program_pub_key = Pubkey::from_str(programID)
         .expect("program address invalid");
 
     thread::spawn(move || loop {
