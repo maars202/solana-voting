@@ -51,8 +51,6 @@ pub fn subscribe_to_programlogs() {
                     match stream {
                         Some(a) => {
                             println!("1. inserting into table happening here, a: {:#?}", a);
-                            
-                            // Stream::insert_or_update(a, &conn)
                             let result = LogStream::insert_or_update(a, &conn);
                             if result != true{
                                 println!("it didnt get inserted!");
