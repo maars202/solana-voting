@@ -17,9 +17,8 @@ STEPS for using sol-stream-voting API to get logs from solana program:
 open 4 terminals
 
 Terminal #1:
-```solana config set --url localhost
 ```
-```
+solana config set --url localhost
 solana-test-validator --no-bpf-jit --reset
 ```
 
