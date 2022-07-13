@@ -57,6 +57,8 @@ Terminal #4: Running diesel API for listening to events
 Set sol-stream-voting/.env to postgresql database url.
 ```
 cd sol-stream-voting 
+cargo check
+diesel migration redo
 cargo run
 ```
 

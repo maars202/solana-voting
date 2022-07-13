@@ -22,7 +22,7 @@ pub fn subscribe_to_programlogs() {
             pubsub_client::PubsubClient::logs_subscribe(&url, 
                 RpcTransactionLogsFilter::All,
                 RpcTransactionLogsConfig { commitment: Some(CommitmentConfig::recent()) })
-                .expect("Something went wrong subscribe_to_program");
+                .expect("Something went wrong subscribe_to_programlogs");
 
              // connect to database:
         let conn = establish_connection();
