@@ -78,7 +78,8 @@ pub fn subscribe_to_programlogs() {
 
 fn get_all_program_accounts() -> Vec<(Pubkey, Account)> {
     // 7sQC1QExqkVZBgxnP8ra25NgCrqe4rQSwTThtVuV9zqk
-    let program_pub_key = Pubkey::from_str("85GB2GBrh15nj5vwfPLZBDW4NHqUuWuXeeago9oUEtnJ")
+    let programID = "85GB2GBrh15nj5vwfPLZBDW4NHqUuWuXeeago9oUEtnJ";
+    let program_pub_key = Pubkey::from_str(programID)
         .expect("program address invalid");
         // https://docs.rs/solana-client/1.7.11/solana_client/rpc_client/struct.RpcClient.html
     // let url = "https://api.devnet.solana.com".to_string();
