@@ -86,6 +86,6 @@ A sample log row that is created after CreateVotetopic program function is trigg
     "" Json"",
 ], with length: 6**|||Program log: votetopic with 0 voters: [
     ""3xfx7HR2X4RV99zeZZcCkiv5BLsrG1ydbypmx8RRHVmK"",
-]|||Program 85GB2GBrh15nj5vwfPLZBDW4NHqUuWuXeeago9oUEtnJ consumed 74588 of 200000 compute units|||Program 85GB2GBrh15nj5vwfPLZBDW4NHqUuWuXeeago9oUEtnJ success",**1657618538**,False
+]|||Program 85GB2GBrh15nj5vwfPLZBDW4NHqUuWuXeeago9oUEtnJ consumed 74588 of 200000 compute units|||Program 85GB2GBrh15nj5vwfPLZBDW4NHqUuWuXeeago9oUEtnJ success",**1657618538**,**False**
 
 
