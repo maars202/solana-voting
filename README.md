@@ -43,7 +43,7 @@ anchor deploy
 
 Take note of programId displayed:
 
-place programId in solana-voting-programs/programs/solana-voting/src/lib.rs in line 7 in ... declare_id!("85GB2GBrh15nj5vwfPLZBDW4NHqUuWuXeeago9oUEtnJ") 
+Place programId in solana-voting-programs/programs/solana-voting/src/lib.rs in line 7 in ... declare_id!("85GB2GBrh15nj5vwfPLZBDW4NHqUuWuXeeago9oUEtnJ") 
 place programId in solana-voting-programs/Anchor.toml in solana_voting = "85GB2GBrh15nj5vwfPLZBDW4NHqUuWuXeeago9oUEtnJ"
 
 ```
