@@ -6,12 +6,8 @@ mod routes;
 mod schema;
 mod solana;
 use rocket::routes;
-use solana::subscribe_to_program;
-
-
-use crate::routes::get_all_stream;
+use solana::subscribe_to_programlogs;
 use crate::routes::index;
-use crate::solana::get_accounts_and_update;
 
 use diesel::prelude::*;
 use dotenv::dotenv;
@@ -28,9 +24,9 @@ pub fn establish_connection() -> PgConnection {
 
 #[rocket::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
-    get_accounts_and_update();
+    // get_accounts_and_update();
     
-    // subscribe_to_program();
+    subscribe_to_programlogs();
 
     let cors = rocket_cors::CorsOptions::default().to_cors()?;
 
@@ -41,16 +37,6 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         .launch()
         .await?;
 
-    // let cfg = rocket::config::Config::build(rocket::config::Environment::Development)
-    // .address("127.0.0.1")
-    // .port("4000")   
-    // .extra("template_dir",  "web/templates")
-    // .unwrap();
-
-    // rocket::custom(cfg)
-    //     .mount("/", routes![index, get_all_stream])
-    //     .attach(rocket_contrib::Template::fairing())
-    //     .launch();
 
     Ok(())
 }
